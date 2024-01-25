@@ -23,7 +23,7 @@
         android:layout_gravity="center"
         android:layout_width="150pt"
         android:layout_height="100pt"
-        app:srcCompat="@drawable/pomeraniwan" />
+        app:srcCompat="@drawable/dog5" />
 
     <Button
         android:id="@+id/button"
