@@ -30,6 +30,7 @@
         android:layout_width="50pt"
         android:layout_height="20pt"
         android:layout_gravity="center"
+        android:onClick="setDogs"
         android:text="Click Me!" />
 
 </LinearLayout>

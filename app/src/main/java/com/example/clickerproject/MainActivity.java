@@ -8,7 +8,6 @@ public class MainActivity extends AppCompatActivity
 {
     String[] dogs = {"dog1", "dog2", "dog3", "dogs4", "dog5"};
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -16,5 +15,9 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
     }
 
+    public void setDogs()
+    {
+
+    }
 
 }
