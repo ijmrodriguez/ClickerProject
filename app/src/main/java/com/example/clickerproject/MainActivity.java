@@ -7,8 +7,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity
 {
-    String[] dogs = {"dog1", "dog2", "dog3", "dogs4", "dog5"};
     ImageView dogImage;
+    int currentImageIndex = 0;
+    int[] dogImages = {R.drawable.dog1, R.drawable.dog2, R.drawable.dog3,
+            R.drawable.dog4, R.drawable.dog5};
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -20,9 +22,7 @@ public class MainActivity extends AppCompatActivity
 
     public void setDogs(View view)
     {
-        for (String dog : dogs) {
-            int resourceId = getResources().getIdentifier(dog, "drawable", getPackageName());
-            dogImage.setImageResource(resourceId);
-        }
+      currentImageIndex = (currentImageIndex + 1) % dogImages.length;
+      dogImage.setImageResource(dogImages[currentImageIndex]);
     }
 }
