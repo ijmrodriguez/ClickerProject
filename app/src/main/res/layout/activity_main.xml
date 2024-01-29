@@ -20,6 +20,7 @@
 
 
     <ImageView
+        android:id="@+id/dogImage"
         android:layout_gravity="center"
         android:layout_width="150pt"
         android:layout_height="100pt"
@@ -28,7 +29,7 @@
     <Button
         android:id="@+id/button"
         android:layout_width="50pt"
-        android:layout_height="20pt"
+        android:layout_height="50dp"
         android:layout_gravity="center"
         android:onClick="setDogs"
         android:text="Click Me!" />
