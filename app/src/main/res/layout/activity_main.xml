@@ -20,16 +20,28 @@
 
 
     <ImageView
+        android:id="@+id/dogImage"
         android:layout_gravity="center"
         android:layout_width="150pt"
         android:layout_height="100pt"
-        app:srcCompat="@drawable/pomeraniwan" />
+        app:srcCompat="@drawable/dog5" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="50pt"
-        android:layout_height="20pt"
+        android:layout_height="50dp"
         android:layout_gravity="center"
+        android:onClick="setDogs"
         android:text="Click Me!" />
 
+    <TextView
+        android:id = "@+id/counterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Press Count: 0"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
 </LinearLayout>
